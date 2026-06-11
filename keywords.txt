@@ -1,0 +1,22 @@
+# VAGClusterExpansion keywords
+
+# Classes
+VAGFISPages	KEYWORD1
+FISPage		KEYWORD1
+FISConfigItem	KEYWORD1
+FISNavState	KEYWORD1
+
+# Methods
+begin		KEYWORD2
+addPage		KEYWORD2
+update		KEYWORD2
+markDirty	KEYWORD2
+rawPage		KEYWORD2
+pageIndex	KEYWORD2
+isCustom	KEYWORD2
+navState	KEYWORD2
+
+# Constants / enum values
+FIS_PAGE	LITERAL1
+FIS_CONFIG	LITERAL1
+FIS_SUBCONFIG	LITERAL1
