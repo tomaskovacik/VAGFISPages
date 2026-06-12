@@ -1,14 +1,14 @@
 #pragma once
 #include <Arduino.h>
 #include <PCINTbuttons.h>
-#include "VAGFISWriter.h"
+#include <VAGFISWriter.h>
 
 // Uncomment to enable serial button-event tracing
 // #define VAGFIS_DEBUG
 
 // ---- Compile-time limits (override BEFORE including this header) ----
 #ifndef VAGFIS_CLUSTER_PAGES
-#define VAGFIS_CLUSTER_PAGES  5   // passthrough pages before custom pages start
+#define VAGFIS_CLUSTER_PAGES  4   // passthrough pages before custom pages start
 #endif
 #ifndef VAGFIS_MAX_PAGES
 #define VAGFIS_MAX_PAGES      8   // max custom pages
@@ -69,7 +69,8 @@ public:
     void begin();   // activates PCINTbuttons and prepares state
     void update();  // call once per loop()
 
-    void markDirty() { _redraw = true; }
+    void markDirty()    { _redraw = true; }
+    void forceReenter() { _lastPage = 0xFF; }
 
     uint8_t     rawPage()   const { return _rawPage; }
     uint8_t     pageIndex() const { return _curPage; }
