@@ -1,4 +1,4 @@
-# VAGClusterExpansion keywords
+# VAGFISPages keywords
 
 # Classes
 VAGFISPages	KEYWORD1

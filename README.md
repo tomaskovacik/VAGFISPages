@@ -1,4 +1,4 @@
-# VAGClusterExpansion
+# VAGFISPages
 
 Custom pages and config menus for **VAG (VW/Audi) FIS instrument-cluster displays**, navigated with the standard steering-column stalk buttons.
 
